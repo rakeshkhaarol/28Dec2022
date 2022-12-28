@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>js classes with inheritance</title>
+        <link rel="stylesheet" href="./css/main.css">
+        <script src="./js/script.js"></script>
+        <script>
+            // i can write the  js code three(3) ways  
+            // first is a cloging the head tag
+            //secound way is a extranal linking
+        </script>
+    </head>
+    <body>
+        <div id="id1"></div>
+        <script>
+            // i can write the  js code three(3) ways  
+            // 3rd is a cloging the body tag
+
+            /*
+                class ClassName {
+  
+                }
+            */
+            class MyClassA{//every time should be class naming convention is a PascalCase
+                //there are 3 members in class 
+                //1. member 1
+
+
+
+                //2. member 2
+
+
+
+                //3. member 3
+                //member 3 is a method/function
+                //1. method definetion
+                //function/method neming conventin use in a camelCase
+                additionA(x,y){//formal aargument
+                    //function/method body
+                    //every method/function should be return value
+                    return x+y;//this is a stetment
+
+                }
+           }
+            //create object
+            //let objectname = new classname();
+            //object.method();
+            let myobja = new MyClassA();
+            let resulta = myobja.additionA(10,2)//10 and 2 are actual aargument
+            console.log(resulta);
+            //class childclass extends prentsclass
+            class MyClassB extends MyClassA{//every time should be class naming convention is a PascalCase
+                //there are 3 members in class 
+                //1. member 1
+
+
+
+                //2. member 2
+
+
+
+                //3. member 3
+                //member 3 is a method/function
+                //1. method definetion
+                //function/method neming conventin use in a camelCase
+                subtrectionB(x,y){//formal aargument
+                    //function/method body
+                    //every method/function should be return value
+                    return x-y;//this is a stetment
+
+                }
+            }
+            //create object
+            //let objectname = new classname();
+            //object.method();
+            let myobjb = new MyClassB();
+            let resultb = myobjb.subtrectionB(10,2)//10 and 2 are actual aargument
+            console.log(resultb);
+            //class childclass extends prentsclass
+            class MyClassC extends MyClassB{//every time should be class naming convention is a PascalCase
+                //there are 3 members in class 
+                //1. member 1
+
+
+
+                //2. member 2
+
+
+
+                //3. member 3
+                //member 3 is a method/function
+                //1. method definetion
+                //function/method neming conventin use in a camelCase
+                multipicationC(x,y){//formal aargument
+                    //function/method body
+                    //every method/function should be return value
+                    return x*y;//this is a stetment
+
+                }
+           }
+            //create object
+            //let objectname = new classname();
+            //object.method();
+            let myobjc = new MyClassC ();
+            let resultc = myobjc.multipicationC(10,2)//10 and 2 are actual aargument
+            console.log(resultc);
+            //class childclass extends prentsclass
+            class MyClassD extends MyClassC{//every time should be class naming convention is a PascalCase
+                //there are 3 members in class 
+                //1. member 1
+
+
+
+                //2. member 2
+
+
+
+                //3. member 3
+                //member 3 is a method/function
+                //1. method definetion
+                //function/method neming conventin use in a camelCase
+                divisionD(x,y){//formal aargument
+                    //function/method body
+                    //every method/function should be return value
+                    return x/y;//this is a stetment
+
+                }
+           }
+           //create object
+           //let objectname = new classname();
+           //object.method();
+           let myobjd = new MyClassD();
+           let resultd = myobjd.divisionD(10,2)//10 and 2 are actual aargument
+           console.log(resultd);
+           
+
+        </script>
+        <script>
+            //i can write the js code cloging the body teg
+            /*
+                class ClassName {
+  
+               }
+            */
+           //class childclass extends prentsclass
+           class MyClassE extends MyClassD{
+            // member 1
+
+
+            // member 2
+
+
+
+            // member 3 is a method/function
+            //1. method definetion 
+
+                studentName(name){ //formal aargument
+                    //function body
+                    //every function has a return value
+                    return 'name'+" "+name
+                };
+           }
+           //create object
+           //let objectname = new classname();
+           //object.method();
+           let myobje = new MyClassE();
+           let resulte = myobje.studentName("deepak");//actual aargument
+           window.alert(resulte)
+
+
+        /*
+            class ClassName {
+  
+            }
+        */
+       //class childclass extends prentsclass
+       class MyClassF extends MyClassE{//PascleCase
+        //1. member 1
+
+
+        //2. member 2
+
+
+
+            //3. member 3 is a method/function
+            studentSurName(surname){//formal aargument and use in camelCase
+                //function body
+                //every function has a return value
+                return 'surname'+" "+surname;
+
+            }
+        }
+        //let objectname = new classname
+        //object.method
+        let myobjf = new MyClassF();
+        var resultf = myobjf.studentSurName(`jain`);
+        document.write(resultf)
+
+
+         /*
+            class ClassName {
+  
+            }
+        */
+       //class childclass extends prentsclass
+       class MyClassG extends MyClassF{
+            // member 1
+
+
+            // member 2
+
+
+            // member 3 is a method/function
+            //use in camalCase
+            studentClassName(classname){//formal aargument
+                //method body
+                return `myclass`+" "+classname;//stetment
+            }
+       }
+       //let objectname = new className
+       //object.method
+       let myobjg = new MyClassG();
+       const resultg = myobjg.studentClassName("MSC")
+       document.getElementById("id1").innerHTML = resultg;
+        </script>
+        <script>
+            //i see every class inheritence property
+            //create object
+            //let objectname = new classname();
+            //object.method();
+            let myinheritobj = new MyClassG();
+             
+            window.alert(myinheritobj.additionA(4,6))
+            window.alert(myinheritobj.subtrectionB(10,6))
+            window.alert(myinheritobj.multipicationC(4,6))
+            window.alert(myinheritobj.divisionD(12,6))
+            window.alert(myinheritobj.studentName("rahul "))
+            window.alert(myinheritobj.studentSurName('dhakad'))
+            window.alert(myinheritobj.studentClassName('b.com'))
+        </script>
+    </body>
+</html>
